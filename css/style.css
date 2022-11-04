@@ -2,7 +2,7 @@
     position: relative;
     
     width: 1150px;
-    height: 468px;
+    height: 430px;
 }
 .slide-img{
     display: block;
@@ -36,4 +36,22 @@
     padding: 0.3rem;
     border-radius: 50%;
     background-color: rgba(128, 128, 128, 0.546);
+}
+#griglia-destra{
+    position: absolute;
+    right: 0px;
+    top: 0;
+    bottom: 0;
+    width: 200px;
+    background-color: black;
+}
+.opacity{
+    width: 100%;
+    height: calc(100% / 5);
+    object-fit: cover;
+    opacity: 0.4;
+}
+
+.crystal{
+    opacity: 1;
 }

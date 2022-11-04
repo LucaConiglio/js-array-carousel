@@ -10,22 +10,32 @@ const images = [
     const btnBot = document.getElementById("button-bot");
     slideImg.src = images[ imgIndex ];
 
+    const imgsRight = document.getElementById("griglia-destra");
+
     btnTop.addEventListener( "click", function (){
+ 
         imgIndex ++;
-        slideImg.src = images[ imgIndex ];
-        
-        if (imgIndex > 4){
+
+        if (imgIndex >= images.length){
             imgIndex = 0
         }
+        slideImg.src = images[ imgIndex ];
+       
+        
     })
 
     btnBot.addEventListener( "click", function (){
-        imgIndex --;
-        slideImg.src = images[ imgIndex ];
+
+        // 0
+        imgIndex--;
 
         if (imgIndex < 0){
-            imgIndex = 4;
-        }
+            imgIndex = images.length - 1;
+        }        
+
+        // 4
+        slideImg.src = images[ imgIndex ];
+        
     })
 
 
