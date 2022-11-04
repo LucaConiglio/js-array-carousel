@@ -1,0 +1,39 @@
+.carosello{
+    position: relative;
+    
+    width: 1150px;
+    height: 468px;
+}
+.slide-img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+   
+   
+   
+
+    
+}
+.slide-img-4-2{
+    object-fit: contain;
+}
+
+#button-top{
+    position: absolute; 
+    top: 30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0.3rem;
+    border-radius: 50%;
+    background-color: rgba(128, 128, 128, 0.546);
+}
+#button-bot{
+    position: absolute; 
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0.3rem;
+    border-radius: 50%;
+    background-color: rgba(128, 128, 128, 0.546);
+}
