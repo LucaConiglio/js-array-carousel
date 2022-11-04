@@ -10,24 +10,44 @@ const images = [
     const btnBot = document.getElementById("button-bot");
     slideImg.src = images[ imgIndex ];
 
-    const imgsRight = document.getElementById("griglia-destra");
+     const imgsRight = document.querySelector(".griglia-destra");
+
+    //  for (let i = 0; i < images.length; i++ ) {
+    //      let active = ""
+    //      if (i === 0) {
+    //          active = "active";
+    //      }
+    //      imgsRight.innerHTML += `<img class="crystal ${active}" src="img/0${i+1}.webp">`;
+    //  }
+
+    let imgId = document.querySelector(".crystal");
+
 
     btnTop.addEventListener( "click", function (){
- 
+        
+    //    const opacity = document.querySelector( `.griglia-destra :nth-child(${ imgIndex + 1 })` );
+    //    opacity.classList.remove("active");
+        imgId.classList.add("active")
         imgIndex ++;
+       
+        
+
+       
 
         if (imgIndex >= images.length){
             imgIndex = 0
         }
         slideImg.src = images[ imgIndex ];
        
-        
+    //    const imgsRight = document.querySelector( `.griglia-destra :nth-child(${ imgIndex + 1 })` );
+    //    imgsRight.classList.add(active)
     })
 
     btnBot.addEventListener( "click", function (){
 
         // 0
         imgIndex--;
+        
 
         if (imgIndex < 0){
             imgIndex = images.length - 1;
